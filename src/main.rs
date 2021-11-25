@@ -1,5 +1,4 @@
-use std::io;
-use std::process;
+use std::{io, process};
 
 static UGUU: &[u8] = include_bytes!("uguu_1.mp3");
 
