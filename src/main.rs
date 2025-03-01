@@ -7,8 +7,8 @@ use rodio::{Decoder, OutputStream, Sink};
 static UGUU: &[u8] = include_bytes!("uguu_1.mp3");
 
 fn main() {
-    let stream_handle = if let Ok((_, stream_handle)) = OutputStream::try_default() {
-        stream_handle
+    let (_stream, stream_handle) = if let Ok((_stream, stream_handle)) = OutputStream::try_default() {
+        (_stream, stream_handle)
     } else {
         eprintln!("No audio output device available");
         process::exit(1);
