@@ -1,14 +1,14 @@
 [package]
 name = "uguu"
-version = "1.0.0"
+version = "1.0.1"
 authors = ["Chris Wong <lambda.fairy@gmail.com>"]
 description = 'Plays an "uguu~" sound effect. Useful for testing.'
 readme = "README.md"
 keywords = ["uguu"]
 categories = ["multimedia::audio"]
-edition = "2018"
+edition = "2024"
 
 [dependencies.rodio]
-version = "0.8.1"
+version = "0.20"
 default-features = false
-features = ["mp3"]
+features = ["minimp3"]
